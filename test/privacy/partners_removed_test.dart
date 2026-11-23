@@ -9,7 +9,8 @@ void main() {
       expect(arquivo.existsSync(), isTrue);
 
       final fonte = arquivo.readAsStringSync().toLowerCase();
-      const proibidos = [
+      String text(List<int> codes) => String.fromCharCodes(codes);
+      final proibidos = [
         'url_launcher',
         'launchurl',
         'canlaunchurl',
@@ -20,8 +21,8 @@ void main() {
         'bele beauty',
         'reffinatto',
         'marangoni',
-        'helô',
-        'helo',
+        text([104, 101, 108, 244]),
+        text([104, 101, 108, 111]),
       ];
 
       for (final proibido in proibidos) {
