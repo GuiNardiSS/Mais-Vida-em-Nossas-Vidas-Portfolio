@@ -49,7 +49,7 @@ Registro do estado encontrado antes de qualquer alteração de comportamento.
 - **App**: 36 testes passando, `flutter analyze` sem issues, APK debug gerado no CI.
 - **Backend**: 65 testes passando (Jest + Supertest + Mongo em memória).
 - **Assets**: áudios, vídeos, livro e imagens de perfil removidos; cartas recompressadas em WebP.
-- **CI**: workflow `CI` verde em `main` (analyze, testes, APK debug, backend).
+- **CI**: o workflow original permanece no repositório privado; a versão pública de portfólio prioriza `flutter analyze`, testes e build web local.
 - **Documentação**: README de portfólio, arquitetura, design system, testes e capturas de tela.
 
 ## Próximos passos
